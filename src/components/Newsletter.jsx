@@ -1,15 +1,15 @@
 import "./Newsletter.css";
 import bullets from "../assets/images/icon-list.svg";
-import success from "../assets/images/icon-success.svg";
+import { useNavigate } from "react-router-dom";
 import illustration from "../assets/images/illustration-sign-up-desktop.svg";
 import { useState } from "react";
 
-const Newsletter = () => {
-    const [email, setEmail] = useState('')
+const Newsletter = ({email, setEmail}) => {
+    const navigate = useNavigate()
 
     const submtitHandler = (e) => {
         e.preventDefault()
-        setEmail('')
+        navigate('/success')
     }
 
   return (
@@ -32,7 +32,7 @@ const Newsletter = () => {
         <form onSubmit={submtitHandler} className="form">
           <label htmlFor="email">Email Address</label>
           <input type="email" placeholder="email@company.com" onChange={e=> setEmail(e.target.value)} value={email}/>
-          <button type="submit">Subscribe to monthly newsletter</button>
+          <button type="submit" className="btn">Subscribe to monthly newsletter</button>
         </form>
       </div>
       <div className="container img">

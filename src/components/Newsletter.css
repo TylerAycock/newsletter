@@ -63,14 +63,32 @@
     margin-bottom: 5px;
 }
 
-.form input, .form button {
+.form input, .btn {
     padding: 15px 10px;
     border-radius: 8px;
+    outline: none;
 }
 
-.form button{
+.btn{
     margin-top: 20px;
     background-color: var(--dark-slate-grey);
     color: var(--white);
+    outline: none;
+    border: none;
+}
+
+.btn:hover,
+.form input:hover{
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--tomatoe);
+    background: linear-gradient(to right, #E75480, var(--tomatoe));
+    box-shadow: 5px 10px 6px hsl(4,100%,67%, 0.2);  
+}
+
+.form input:focus{
+    outline: none;
 }
 

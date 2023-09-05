@@ -1,0 +1,26 @@
+.success-container{
+    background-color: var(--white);
+    border-radius: 25px;
+    width: 25%;
+    height: 45%;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.check{
+    height: 45px;
+    width: 45px;
+}
+
+
+.confirm-msg{
+    line-height: 1.5;
+}
+
+.email{
+    font-weight: 700;
+}
