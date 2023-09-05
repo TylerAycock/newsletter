@@ -57,13 +57,14 @@
     margin-top: 20px;
 }
 
-.form label{
+.form label,
+.msg{
     font-size: .75rem;
     font-weight: 700;
     margin-bottom: 5px;
 }
 
-.form input, .btn {
+.email-input, .btn {
     padding: 15px 10px;
     border-radius: 8px;
     outline: none;
@@ -78,7 +79,7 @@
 }
 
 .btn:hover,
-.form input:hover{
+.email-input:hover{
     cursor: pointer;
 }
 
@@ -88,7 +89,29 @@
     box-shadow: 5px 10px 6px hsl(4,100%,67%, 0.2);  
 }
 
-.form input:focus{
+.email-input:focus{
     outline: none;
 }
 
+.error{
+    box-shadow: 0 0 2px 1px var(--tomatoe);
+    background-color: hsl(4,100%,67%, 0.3);
+    color: var(--tomatoe);
+}
+
+.msg-group{
+    padding-bottom: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.msg{
+    color: var(--tomatoe);
+    display: none;
+}
+
+.error-msg{
+    color: var(--tomatoe);
+    font-size: .75rem;
+}
