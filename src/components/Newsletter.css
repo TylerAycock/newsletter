@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --tomatoe: hsl(4,100%,67%);
+    --dark-slate-grey:hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%)
+}
+
+.main-container{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    border-radius: 25px;
+    padding: 25px;
+    height: 65%;
+}
+
+.img{
+    height: 100%;
+}
+
+.illustration{
+    height: 100%;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1rem;
+    margin: 0px 25px;
+    width: 50%;
+    margin-right: 50px;
+}
+
+.title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+.bullet{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.form label{
+    font-size: .75rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.form input, .form button {
+    padding: 15px 10px;
+    border-radius: 8px;
+}
+
+.form button{
+    margin-top: 20px;
+    background-color: var(--dark-slate-grey);
+    color: var(--white);
+}
+
