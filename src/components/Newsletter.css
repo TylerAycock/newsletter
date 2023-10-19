@@ -62,22 +62,21 @@ img{
     font-weight: 700;
 }
 
-.email-input, .btn {
+.email-input, button {
     padding: 15px 10px;
     border-radius: 8px;
     outline: none;
     cursor: pointer;
 }
 
-.btn{
+button{
     background-color: var(--dark-slate-grey);
     color: var(--white);
     outline: none;
     border: none;
-
 }
 
-.btn:hover{
+button:hover{
     background-color: var(--tomatoe);
     background: linear-gradient(to right, #E75480, var(--tomatoe));
     box-shadow: 5px 10px 6px hsl(4,100%,67%, 0.2);  
